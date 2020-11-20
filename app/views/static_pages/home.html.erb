@@ -1,5 +1,4 @@
-<%= link_to 'サインイン', '/users/sign_in', method: :get%>
-<%= link_to 'ユーザー登録', '/users/sign_up', method: :get%>
-<hr>    
-<h1>StaticPages</h1>
-
+<h1>HOME PAGE</h1>
+<% if user_signed_in? %>
+    <%= link_to "本一覧をみる", "/books" %>
+<% end %>
