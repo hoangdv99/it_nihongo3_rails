@@ -12,13 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title, "タイトル" %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :number_of_pages %>
+    <%= form.label :number_of_pages, "ページ数" %>
     <%= form.number_field :number_of_pages %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :image, "カバーアップロード"  %>
+    <%= form.file_field :image %><br>
   </div>
 
   <div class="actions">
