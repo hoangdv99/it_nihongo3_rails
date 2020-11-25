@@ -22,10 +22,15 @@
   </div>
   
   <div class="field">
+    <%= form.label :detail, "Detail" %>
+    <%= form.text_field :detail  %>
+  </div>
+  
+  <div class="field">
     <%= form.label :image, "カバーアップロード"  %>
     <%= form.file_field :image %><br>
   </div>
-
+  
   <div class="actions">
     <%= form.submit %>
   </div>
